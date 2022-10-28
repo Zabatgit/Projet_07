@@ -1,0 +1,44 @@
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: #e2dddd solid 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    max-height: 54px;
+}
+
+.header-logo {
+    height: 30px;
+    width: 145px;
+}
+
+.header-search {
+    padding: 5px 7px;
+    font-size: 14px;
+}
+
+.header-menu {
+    margin-right: 10px;
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.header-nav-bar, .header-menu-option {
+    border: none;
+    padding: 5px;
+}

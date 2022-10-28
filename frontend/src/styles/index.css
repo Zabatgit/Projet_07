@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --color-primary: #FD2D01;
+  --color-secondary: #FFD7D7;
+  --color-tertiary: #4E5166;
+}
+
+.main-container {
+  min-height: calc(100vh - 125px);
+}
+
+@media screen AND (min-width: 768px) {
+    .main-feed {
+      display: flex;
+      justify-content: center;
+    }
+    .profile-section {
+      width: calc(100% / 3.5);
+      margin: 0 5px 15px 15px;
+    }
+    .profile-container {
+      position: sticky;
+      top: 75px
+    }
+    .new-post, .new-post-container, .article-post {
+      margin: 15px 15px;
+    }
+}
+
+@media screen AND (min-width: 992px) {
+  .profile-section {
+    width: calc(100% / 4.5);
+  }
+  .header-nav {
+    justify-content: space-around;
+  }
+}

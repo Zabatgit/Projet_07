@@ -1,0 +1,20 @@
+.App-banner {
+    text-align: center;
+    padding: 30px 15px;
+    max-width: 520px;
+    margin: auto;
+}
+
+.banner-nav-list {
+    list-style: none;
+}
+
+.logo {
+    width: 100%;
+    max-width: 450px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}

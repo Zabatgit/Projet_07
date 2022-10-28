@@ -1,0 +1,217 @@
+.article-post {
+    border: 1px solid #e2dddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: #ddd 0 3px 5px;
+}
+
+.article-post {
+    padding: 15px 0 0 0;
+    position: relative;
+}
+
+.post-options {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.article-top, .user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.img-post {
+    width: calc(100% + 0.35px);
+    max-height: 500px;
+    object-fit: cover;
+
+}
+
+.post-description {
+    margin: 0;
+    padding: 15px 0;    
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.article-top, .post-description {
+    padding-left: 15px;
+    padding-right: 15px;   
+}
+
+.post-icons, .post-comment {
+    display: flex;
+    align-items: center;
+}
+
+.post-icons {
+    justify-content: space-around;
+    height: 20px;
+    margin: 10px 5px 15px 5px;
+}
+
+.post-liked {
+    color: rgb(0, 72, 255);
+    animation-name: liked;
+    animation-duration: 300ms;
+    transition: all 150ms ease-in-out;
+}
+
+.post-liked:hover {
+    color: rgb(0, 72, 255);
+}
+
+.likes-comments-qty {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+@keyframes liked {
+    0% {
+        transform: scale(1) rotate(0turn);
+        color: rgb(0, 72, 255);
+    }
+    50% {
+        transform: scale(1.5) rotate(-.5turn);
+        color: rgb(0, 72, 255);
+    }
+    100% {
+        transform: scale(1) rotate(-1turn);
+        color: rgb(0, 72, 255);
+    }
+}
+.icon:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+.post-comment {
+    border: 1px solid #e2dddd;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin: 15px 5px;
+}
+
+.create-comment {
+    border: 1px solid #fff;
+    outline: 0px !important;
+    padding: 5px;
+    margin-left: 3px;
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.comment-container {
+    margin: 10px; 
+    display: flex;
+    position: relative;   
+}
+.comment {
+    width: 100%;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.user-info {
+    display: flex;
+}
+
+.comment-user-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+.comment-content {
+    margin: 0;
+    margin-top: 5px;
+    color: rgba(0,0,0,0.8); 
+}
+
+.comment-options {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.face-smile, .arrow-up, .articleDate {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.arrow-up:hover {
+    transform: scale(1.2);
+    transition: all 150ms ease-in-out;
+}
+
+.face-smile:hover {
+    color: rgb(255, 200, 0);
+}
+
+.articleDate {
+    font-size: 12px;
+}
+
+.edit-delete button, .delete-comment {
+    padding: 3px;
+    margin-bottom: 3px;
+    font-size: 12px;
+    width: auto;
+}
+
+.edit-delete {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+.edit-delete button:hover, .delete-comment:hover {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cancel-edit {
+    top: 15px;
+}
+
+.modify-post-description input {
+    border: none;
+}
+
+.modify-post-description input:focus {
+    outline: none;
+}
+
+.modify-post-bottom {
+    padding: 15px;
+}
+
+.delete-comment {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}

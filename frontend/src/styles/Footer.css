@@ -1,0 +1,21 @@
+footer {
+    background-color: var(--color-tertiary);
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 30px;
+    width: 170px;
+    margin-top: 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer span {
+    color: var(--color-primary);
+}
